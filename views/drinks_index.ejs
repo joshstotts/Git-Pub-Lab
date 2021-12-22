@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to gitpub</title>
+        <style type="text/css">
+          body {
+            color: blanchedalmond;
+            background-color: steelblue;
+            text-transform: capitalize;
+          }
+        </style>
+  </head>
+  <body>
+    <h1>Welcome to gitpub drinks</h1>
+    <ul>
+      <% for(let i = 0; i < allDrinks.length; i++) { %>
+        <li>
+          <a href="/drinks/<%= i %>">
+            <%= allDrinks[i].name %>
+          </a>
+        </li>
+      <% } %>
+    </ul>
+
+    <a href="/foods">Check out our food!</a>
+      
+  </body>
+</html>
